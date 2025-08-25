@@ -1,0 +1,154 @@
+.navbar {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    background: #fff;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #4f46e5;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 12px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.badge span {
+    background: #6d28d9;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+.nav-buttons a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #111;
+}
+
+.btn {
+    background: #111;
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #4f46e5;
+    opacity: 0.9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+
+.subtitle {
+    margin: 10px 0 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-text {
+    margin-bottom: 50px;
+}
+
+.about-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.team-member .role {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+footer {
+    margin: 40px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-member {
+        width: 90%;
+        max-width: 350px;
+    }
+}

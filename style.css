@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    background: #fff;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #4f46e5;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 12px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.badge span {
+    background: #6d28d9;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+.nav-buttons a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #111;
+}
+
+.btn {
+    background: #111;
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.hero {
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-outline {
+    border: 1px solid #111;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #111;
+}
+
+.hero-img {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-img {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 32px;
+    }
+}
+
+.features {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.features .subtitle {
+    font-size: 16px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.feature-item {
+    text-align: left;
+}
+
+.feature-item .icon {
+    background: #111;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .feature-item {
+        text-align: center;
+    }
+}
+
+.cta-banner {
+    background: #000;
+    color: #fff;
+    border-radius: 12px;
+    margin: 60px auto;
+    max-width: 900px;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-banner h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta-banner p {
+    font-size: 16px;
+    color: #90a4ae;
+    margin-bottom: 25px;
+}
+
+.cta-banner .btn {
+    display: inline-block;
+    background: #0c0c0c;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.cta-banner .btn:hover {
+    background: #2518d8;
+}
+
+@media (max-width: 768px) {
+    .cta-banner h2 {
+        font-size: 26px;
+    }
+    .cta-banner p {
+        font-size: 14px;
+    }
+    .integrations .logo-row {
+        gap: 20px;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 10px;
+    background: #f9fafb;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer p {
+    margin: 5px 0;
+}
